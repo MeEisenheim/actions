@@ -16,6 +16,9 @@ jobs:
       - name: List Files
         run: ls -a
 
+      - name: install_cowsay
+        run: sudo apt install cowsay -y
+          
       - name: create_file
         run: cowsay -f dragon "Hello" > file2.txt
 
